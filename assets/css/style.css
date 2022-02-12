@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+  background-color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #a9a9a9;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+main .container .profile {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+main .container .profile img {
+  width: 30%;
+  border-radius: 20%;
+}
+main .container .profile h1 {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #4e5150;
+}
+main .container .profile p {
+  font-size: 0.8rem;
+}
+main .container .profile .statistics {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+main .container .profile .statistics .item {
+  width: 80px;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  background: #e5e5e5;
+  border-radius: 10px;
+}
+main .container .profile .statistics .item p {
+  color: #4e5150;
+}
+main .container .photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 3rem;
+}
+main .container .photos img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 5px 5px 23px 5px rgba(0, 0, 0, 0.2);
+}
+main .container .photos img:nth-child(2) {
+  grid-column: 2/span 2;
+}
+main .container .photos img:nth-child(3) {
+  grid-column: 1/span 2;
+}
+main .container .photos img:nth-child(4) {
+  grid-row: 2/span 2;
+  grid-column: 3;
+}
+@media (min-width: 768px) {
+  main .container .profile img {
+    width: 20%;
+  }
+  main .container .profile h1 {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+  }
+  main .container .profile p {
+    font-size: 1rem;
+  }
+  main .container .profile .statistics .item p {
+    font-size: 1rem;
+  }
+  main .container .profile .statistics .item small {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  main .container .photos {
+    grid-template-columns: repeat(3, minmax(min-content, 200px));
+    grid-template-rows: repeat(3, minmax(min-content, 200px));
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  main .container .photos {
+    grid-template-columns: repeat(3, minmax(min-content, 250px));
+    grid-template-rows: repeat(3, minmax(min-content, 250px));
+    gap: 1.5rem;
+  }
+}
+
+footer {
+  --color: #828282;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color);
+}
+footer a {
+  color: var(--color);
+}
+@media (min-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+    margin-top: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

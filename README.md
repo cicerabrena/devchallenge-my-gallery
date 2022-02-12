@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://cicerabrena.github.io/devchallenge-recipe-page/" target="_blank">
+    <a href="https://cicerabrena.github.io/devchallenge-my-gallery/" target="_blank">
       Demo
     </a>
     <span> | </span>
